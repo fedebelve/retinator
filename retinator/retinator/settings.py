@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'result',
-    'request'
+    'request',
+    'pydicom'
 ]
 
 REST_FRAMEWORK = {
