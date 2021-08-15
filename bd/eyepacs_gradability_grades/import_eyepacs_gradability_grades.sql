@@ -7,13 +7,13 @@ CREATE TABLE eyepacs_gradability_grades (
     PRIMARY KEY(num, eye)
 );
 
+SHOW VARIABLES LIKE "secure_file_priv";
+
 LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/eyepacs_gradability_grades.csv'
 INTO TABLE eyepacs_gradability_grades
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
-
-SHOW VARIABLES LIKE "secure_file_priv";
 
 SELECT * 
 FROM eyepacs_gradability_grades;
